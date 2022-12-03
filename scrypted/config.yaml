@@ -9,6 +9,9 @@ arch:
   - armv7
 image: koush/scrypted
 host_network: true
+ingress: true
+ingress_port: 11080
+ingress_entry: /
 environment:
   SCRYPTED_VOLUME: "/data/scrypted_data"
 backup_exclude:
