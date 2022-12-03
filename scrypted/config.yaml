@@ -20,9 +20,7 @@ devices:
   - /dev/video10
   - /dev/video0
 usb: true
-ingress: true
-ingress_port: 11080
-ingress_entry: /endpoint/@scrypted/core/public/#/
+ingress: false
 environment:
   SCRYPTED_VOLUME: "/data/scrypted_data"
 backup_exclude:
