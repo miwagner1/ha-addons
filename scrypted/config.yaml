@@ -9,9 +9,20 @@ arch:
   - armv7
 image: koush/scrypted
 host_network: true
+devices:
+  - /dev/dri/renderD128
+  - /dev/apex_0
+  - /dev/apex_1
+  - /dev/apex_2
+  - /dev/apex_3
+  - /dev/dri/card0
+  - /dev/vchiq
+  - /dev/video10
+  - /dev/video0
+usb: true
 ingress: true
 ingress_port: 11080
-ingress_entry: /
+ingress_entry: /endpoint/@scrypted/core/public/#/
 environment:
   SCRYPTED_VOLUME: "/data/scrypted_data"
 backup_exclude:
